@@ -238,7 +238,9 @@ GDCquery_clinic <- function(
         files.data_category <- "Biospecimen"
     }
 
-    if (grepl("TCGA",project)){
+    #if (grepl("TCGA",project)){
+    # Edited by Dan Monyak
+    if (TRUE){
         options.filter <- paste0(
             "filters=",
             URLencode('{"op":"and","content":[{"op":"in","content":{"field":"cases.project.project_id","value":["'),
